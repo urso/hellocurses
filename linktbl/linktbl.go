@@ -1,5 +1,6 @@
 package linktbl
 
+// #cgo LDFLAGS: -ldl
 // #include <dlfcn.h>
 //
 // typedef struct tableEntry {

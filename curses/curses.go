@@ -19,7 +19,15 @@ import "github.com/urso/hellocurses/linktbl"
 
 func LoadLibs() error {
 	paths := []string{
+		// common linux paths
 		"/usr/lib/libncurses.so",
+		"/usr/lib/libncurses.so.5",
+		"/lib/libncurses.so",
+		"/lib/libncurses.so.5",
+		"/lib/x86_64-linux-gnu/libncurses.so",
+		"/lib/x86_64-linux-gnu/libncurses.so.5",
+
+		// OS X
 		"/usr/lib/libncurses.dylib",
 	}
 
